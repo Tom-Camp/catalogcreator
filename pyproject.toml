@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "catalog-maker"
+version = "0.1.0"
+description = ""
+authors = ["Tom Camp <tomcamp@protonmail.ch>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pathlib = "^1.0.1"
+"ruamel.yaml" = "^0.17.21"
+pydantic = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
