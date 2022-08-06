@@ -213,7 +213,7 @@ class Resource(OSCALElement):
     props: Optional[List[Property]]
     document_ids: Optional[List[DocumentId]]
     citation: Optional[Citation]
-    base64: [Optional[Base64]]
+    base64: Optional[Base64]
     remarks: Optional[MarkupMultiLine]
 
 
@@ -425,4 +425,4 @@ class ResponsibleRole(OSCALElement):
 class Part(OSCALElement):
     id: str
     name: str
-    ns: Optional[AnyUrl]
+    ns: Optional[str]
