@@ -151,15 +151,9 @@ class Property(OSCALElement):
     value: str
     uuid: UUID = Field(default_factory=uuid4)
 
-
-class Resource(OSCALElement):
-    uuid: UUID = Field(default_factory=uuid4)
-    title: Optional[str]
-    description: Optional[MarkupMultiLine]
-    props: Optional[List[Property]]
-    remarks: Optional[MarkupMultiLine]
-
-    # missing: annotations, document-ids, citation, rlinks, base64
+class DocumentId(OSCALElement):
+    scheme: Optional[str]
+    identifier: Optional[str]
 
 
 class LinkRelEnum(str, Enum):
@@ -179,6 +173,53 @@ class Link(OSCALElement):
 
     class Config:
         fields = {"media_type": "media-type"}
+        allow_population_by_field_name = True
+
+
+class Citation(OSCALElement):
+    text: MarkupLine
+    props: Optional[List[Property]]
+    links: Optional[List[Link]]
+
+
+class Hash(OSCALElement):
+    algorithm: str
+    value: Optional[str]
+
+
+class Rlink(OSCALElement):
+    href: str
+    media_type: Optional[str]
+    hashes: Optional[List[Hash]]
+
+    class Config:
+        fields: {"media_type": "media-type"}
+        allow_population_by_field_name = True
+
+
+class Base64(OSCALElement):
+    filename: Optional[str]
+    media_type: Optional[str]
+    value: Optional[str]
+
+    class Config:
+        fields: {"media_type": "media-type"}
+        allow_population_by_field_name = True
+
+class Resource(OSCALElement):
+    uuid: UUID = Field(default_factory=uuid4)
+    title: Optional[str]
+    description: Optional[MarkupMultiLine]
+    props: Optional[List[Property]]
+    document_ids: Optional[List[DocumentId]]
+    citation: Optional[Citation]
+    base64: [Optional[Base64]]
+    remarks: Optional[MarkupMultiLine]
+
+
+    # missing: base64
+    class Config:
+        fields: {"document_ids": "document-ids"}
         allow_population_by_field_name = True
 
 
@@ -214,11 +255,6 @@ class Revision(OSCALElement):
     class Config:
         fields = {"last_modified": "last-modified", "oscal_version": "oscal-version"}
         allow_population_by_field_name = True
-
-
-class DocumentId(OSCALElement):
-    scheme: str  # really, URI
-    identifier: str
 
 
 class Test(OSCALElement):
