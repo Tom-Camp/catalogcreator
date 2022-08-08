@@ -208,8 +208,10 @@ AC-02:
           temporary accounts are no longer required or when information system users
           are terminated or transferred or information system usage or need-to-know/need-to-share
           changes.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High:
       parts:
       - label: PRIV.1
         prose: Prohibit use of guest, anonymous, and shared accounts for providing access
@@ -469,8 +471,10 @@ AC-02(02):
       24 hours; and temporary accounts with a fixed duration not to exceed 30 days for
       High systems and 60 days for Moderate systems.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the information system automatically terminates temporary and
@@ -663,9 +667,10 @@ AC-02(09):
       - label: 2.
         prose: Include compensating processes and procedures implemented to provide
           the ability to uniquely attribute account user activities.
-    - prose: 'Systems processing, storing, or transmitting PHI:\n\n
-        The organization only permits the use of shared/group accounts that meet
-        the requirement to uniquely attribute user activity to an account.'
+    - prose: |
+        Systems processing, storing, or transmitting PHI:
+
+        The organization only permits the use of shared/group accounts that meet the requirement to uniquely attribute user activity to an account.
   implementation:
   guidance:
   - prose: >+
@@ -915,11 +920,12 @@ AC-03:
   assurance:
   priority: P1
   control:
-  - prose: 'The information system enforces approved authorizations for logical access
-      to information and system resources in accordance with applicable access control
-      policies.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization controls access to PII through access enforcement mechanisms.'
+  - prose: |
+      The information system enforces approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization controls access to PII through access enforcement mechanisms.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -1043,9 +1049,10 @@ AC-03(09):
       - label: b.
       - prose: CMS-defined information security and privacy safeguards are used to validate the 
           appropriateness of the information designated for release.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        The information system does not release information outside of the established
-        system boundary unless:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        The information system does not release information outside of the established system boundary unless:
       parts:
       - label: a.
         prose: The receiving organization or information system provides privacy and
@@ -1055,8 +1062,10 @@ AC-03(09):
         prose: controls UL-1 and UL-2 are used to validate the appropriateness of the
           information designated for release.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: PII may only be released when authorized, there is a need to know, and
@@ -1234,14 +1243,12 @@ AC-04(08):
   assurance:
   priority: P3
   control:
-  - prose: 'The information system enforces information flow control using organizationally-defined
-      security policy filters as a basis for flow control decisions for prevention
-      of unauthorized transfer of PII across information system boundaries or domains.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The information system enforces information flow control using best available
-      security policy filters, or like technology to filter on selected PII values
-      as a basis for flow control decisions for prevention of unauthorized transfer
-      of PII across information system boundaries or domains.'
+  - prose: |
+      The information system enforces information flow control using organizationally-defined security policy filters as a basis for flow control decisions for prevention of unauthorized transfer of PII across information system boundaries or domains.
+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The information system enforces information flow control using best available security policy filters, or like technology to filter on selected PII values as a basis for flow control decisions for prevention of unauthorized transfer of PII across information system boundaries or domains.
   implementation:
   guidance:
   - prose: |
@@ -1627,9 +1634,10 @@ AC-05:
       - label: c.
         prose: Defines information system access authorizations to support separation
           of duties.
-  - prose: 'Systems defined as CSPs:\n\n
-      For CSPs, the information system enforces role-based access control policies
-      over all subjects and objects where the policy specifies that:'
+  - prose: |
+      Systems defined as CSPs:
+
+      For CSPs, the information system enforces role-based access control policies over all subjects and objects where the policy specifies that:
     parts:
     - label: a.
       prose: The policy is uniformly enforced across all subjects and objects within
@@ -1707,8 +1715,10 @@ AC-05:
         prose: The information system testing functions (i.e., user acceptance, quality
           assurance, information security) and production functions must be divided
           among separate individuals or groups.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: 'For CSPs, the organization:'
@@ -1984,8 +1994,10 @@ AC-06(01):
     - label: e.
       prose: Setting/modifying system configurations and parameters.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization explicitly authorizes access to organization-defined
@@ -2098,8 +2110,10 @@ AC-06(02):
     - label: e.
       prose: Setting/modifying system configurations and parameters.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization requires that users of information system accounts,
@@ -2516,8 +2530,10 @@ AC-07:
         prose: Configure the information system to disable access for at least fifteen
           (15) minutes after five (5) invalid login attempts during a 120-minute time
           window.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: 'For CSPs, the information system:'
@@ -2612,8 +2628,10 @@ AC-08:
       - label: 3.
         prose: Includes a description of the authorized uses of the system.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization determines elements of the cloud environment
@@ -3176,19 +3194,20 @@ AC-16:
       - label: d.
         prose: Determines the permitted CCIC-defined values or ranges for each of the
           established security attributes.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        The organization provides the means to associate the following with information
-        in storage, in process, and/or in transmission'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        The organization provides the means to associate the following with information in storage, in process, and/or in transmission
       parts:
       - label: a.
         prose: A security attribute to demonstrate the user (subject) has completed privacy
           training in the last year; andb. For data structures that are known or plan
           to contain personally identifiable information (PII), a security attribute
           of "Contains PII"[having] value of "yes"or "no".
-    - prose: 'Systems processing, storing, or transmitting PHI:\n\n
-        The organization provides the means to associate a security attribute of
-        "Contains PHI"for data structures that are known or plan to contain PHI having
-        value of "yes"or "no" with information in storage, in process, and/or in transmission.'
+    - prose: |
+        Systems processing, storing, or transmitting PHI:
+
+        The organization provides the means to associate a security attribute of "Contains PHI"for data structures that are known or plan to contain PHI having value of "yes"or "no" with information in storage, in process, and/or in transmission.
   implementation:
   guidance:
   - prose: >+
@@ -3299,18 +3318,21 @@ AC-16(03):
   priority: P3
   control:
   - parts:
-    - prose: 'The information system maintains the association and integrity of organizationally-defined
-      security attributes to organizationally-defined subjects and objects.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The information system maintains the association and integrity of'
+    - prose: |
+        The information system maintains the association and integrity of organizationally-defined security attributes to organizationally-defined subjects and objects.
+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        The information system maintains the association and integrity of'
       parts:
       - label: a.
         prose: The user attribute of "Annual PII Training" to individuals with access
           to personally identifiable information (PII); andb. the information attribute
           of "Contains PII" to applicable information.
-    - prose: 'Systems processing, storing, or transmitting PHI:\n\n
-        The information system maintains the association and integrity of the information
-        attribute of "Contains PHI" to applicable information.'
+    - prose: |
+        Systems processing, storing, or transmitting PHI:
+
+        The information system maintains the association and integrity of the information attribute of "Contains PHI" to applicable information.
   implementation:
   guidance:
   - prose: >+
@@ -3788,9 +3810,10 @@ AC-17(09):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Provides the capability to expeditiously disconnect or disable remote access
-      to the information system within one (1) hour.'
+  - prose: |
+      The organization:
+      
+      Provides the capability to expeditiously disconnect or disable remote access to the information system within one (1) hour.
   implementation:
   - parts:
     - prose: 'High, Moderate & Low:'
@@ -3799,8 +3822,10 @@ AC-17(09):
         prose: The organization terminates or suspends network connections (i.e., a system
           to system interconnection) upon issuance of an order by the CIO, CISO, or
           Senior Official for Privacy (SOP).
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: The organization terminates or suspends network connections with 15 minutes
@@ -4119,13 +4144,17 @@ AC-19:
         systems.
   implementation:
   - parts:
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Encrypt information on all mobile devices that contains PII.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization defines inspection and preventative measures.
@@ -4201,8 +4230,10 @@ AC-19(05):
       encryption or container encryption to protect the confidentiality and integrity
       of information on approved mobile devices.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: Encrypt information on all mobile devices that contain low, moderate,
@@ -4306,8 +4337,10 @@ AC-20:
           firewalls. Limit remote access only to information resources required by home
           users to complete job duties. Require that any government-owned equipment
           be used only for business purposes by authorized employees.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Only organization owned computers and software can be used to process,
@@ -4500,8 +4533,10 @@ AC-20(03):
         with HHS and CMS policies and directives on use of personally-owned information
         systems and components.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: At a minimum, controls must include implementation of either full-device
@@ -4679,8 +4714,10 @@ AC-22:
       prose: Reviews the content on the publicly accessible information system for
         nonpublic information bi-weekly and removes such information, if discovered.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization reviews the content on the publicly accessible
@@ -4863,8 +4900,10 @@ AT-02:
           days thereafter, to all employees and contractors, to explain the importance
           of and responsibility for safeguarding PII and ensuring privacy, as established
           in federal legislation and OMB guidance.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Provide privacy training for all systems that collect, maintain, store,
@@ -5041,14 +5080,18 @@ AT-03:
           roles and responsibilities that have not completed the required training within
           the mandated timeframes shall have their user accounts disabled until they
           have met their RBT requirement.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Provide role-based privacy training for all systems with PII, commensurate
           with the PII confidentiality impact level.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization provides information security and privacy refresher
@@ -5151,8 +5194,10 @@ AT-04:
       prose: Retains individual training records for a minimum of five (5) years after
         the individual completes each training.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization retains individual information security and
@@ -5286,8 +5331,10 @@ AU-01:
       - label: 2.
         prose: Audit and accountability procedures at least every three (3) years.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: Review and update (as necessary) the current audit and accountability
@@ -5486,8 +5533,10 @@ AU-02:
         prose: Verify that proper logging is enabled to audit administrator activities
       - label: Std.4
         prose: Information collected will be compliant with the Federal Rules of Evidence.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: 'Determine that the information system can audit the following events:'
@@ -5520,8 +5569,10 @@ AU-02:
           prose: Concurrent logons from different workstations; and
         - label: (e)
           prose: All program initiations, e.g., executable file.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: 'CSPs must implement this Standard (AU-2 CSP.1) as a replacement for the
@@ -5661,8 +5712,10 @@ AU-02(03):
       prose: The organization reviews and updates the list of auditable events as per
         the frequency defined in this control or whenever there is a change in the
         threat environment.
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (AU-2(3) CSP.1) as a replacement for
@@ -5793,8 +5846,10 @@ AU-03(01):
       - Program or command used to initiate the event; and
       - Source and destination addresses.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (AU-3(1) CSP.1) as a replacement for
@@ -6028,8 +6083,10 @@ AU-05:
           prose: Stop generating audit records; or
         - label: (c)
           prose: Overwrite the oldest records, in the case that storage media is unavailable.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: 'For Moderate CSPs, the information system takes the following actions
@@ -6249,8 +6306,10 @@ AU-06:
         prose: Inspect administrator groups on demand but no less often than once every
           thirty (30) days to ensure unauthorized administrator accounts have not been
           created.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: Use automated utilities to review audit records no less often than defined
@@ -6943,8 +7002,10 @@ AU-08(01):
       prose: Synchronizes the internal clocks to the authoritative time source when
         the time difference is greater than one hundred (100) milliseconds.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: 'For CSPs, the information system synchronizes internal information system
@@ -7394,15 +7455,19 @@ AU-11:
       - label: Std.2
         prose: Audit record retention must comply with National Archives and Records
           Administration (NARA) or other authoritative mandate durations.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Audit inspection reports, including a record of corrective actions, must
           be retained by the organization for a minimum of three (3) years from the
           date the inspection was completed.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization retains audit records on-line for at least
@@ -7471,8 +7536,10 @@ AU-12:
       prose: Generates audit records for the list of events defined in AU-2 with the
         content defined in AU-3.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the information system provides audit record generation capability
@@ -7570,12 +7637,17 @@ AU-12(03):
   assurance:
   priority: P1
   control:
-  - prose: 'The information system provides the capability for defined individuals or
+  - prose: >+
+      The information system provides the capability for defined individuals or
       roles (defined in the applicable system security plan) to change the auditing
       to be performed on defined information system components (defined in the applicable
       system security plan) based on defined selectable event criteria (defined in
-      the applicable system security plan) within minutes.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
+      the applicable system security plan) within minutes.
+
+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The information system provides the capability for a limited subset of authorized
       system administrators to change the auditing to be performed on any information
       system that contains PII based on change in risk based on law enforcement, intelligence,
@@ -7685,13 +7757,18 @@ AU-16(02):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization provides cross-organizational audit information to organizationally-defined
+  - prose: >+
+      The organization provides cross-organizational audit information to organizationally-defined
       organizations based on organizationally-defined cross-organizational sharing
-      agreements.\n\n
-      Systems processing, storing, or transmitting PHI:\n\n
+      agreements.
+
+
+      Systems processing, storing, or transmitting PHI:
+
+
       The organization provides cross-organizational audit information to any
       organization with whom audit information containing PII or PHI is shared based
-      on MOUs, MOAs, or other data sharing agreements.'
+      on MOUs, MOAs, or other data sharing agreements.
   implementation:
   guidance:
   - prose: >+
@@ -7933,8 +8010,10 @@ CA-02(01):
   - prose: The organization employs assessors or assessment teams with CMS CISO defined
       level of independence to conduct security control assessments.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization employs an independent assessor or assessment
@@ -8221,13 +8300,18 @@ CA-03(03):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization prohibits the direct connection of CMS information systems
-      to an external network without the use of CMS-authorized boundary protection
-      device as defined within the Technical Reference Architecture (TRA).\n\n
-      Systems defined as CSPs:\n\n
+  - prose: >+
       The organization prohibits the direct connection of CMS information systems
       to an external network without the use of CMS-authorized boundary protection
-      device as defined within the Technical Reference Architecture (TRA).'
+      device as defined within the Technical Reference Architecture (TRA).
+
+
+      Systems defined as CSPs:
+
+
+      The organization prohibits the direct connection of CMS information systems
+      to an external network without the use of CMS-authorized boundary protection
+      device as defined within the Technical Reference Architecture (TRA).
   implementation:
   guidance:
   - prose: >+
@@ -8434,9 +8518,10 @@ CA-06:
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Authorizing Official (AO) authorizes the information system for processing
-      prior to commencing any operations; and'
+  - prose: |
+      The organization:
+      
+      Authorizing Official (AO) authorizes the information system for processing prior to commencing any operations; and
     parts:
     - label: a.
       prose: |
@@ -9158,8 +9243,10 @@ CM-02(01):
       prose: Supporting baseline configuration documentation reflects ongoing implementation
         of operational baseline configuration updates, either directly or by policy.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+         Systems defined as CSPs:
+      
+         High & Moderate:
     parts:
     - label: CSP.1
       prose: 'For CSPs, the organization reviews and updates the baseline configuration
@@ -9409,8 +9496,10 @@ CM-03:
         not limited to, the System Developer/Maintainer and information system support
         staff.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization coordinates and provides oversight for configuration
@@ -9864,8 +9953,10 @@ CM-05(01):
   - prose: The information system enforces access restrictions and supports auditing
       of the enforcement actions.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (CM-5(1) CSP.1) as a replacement for
@@ -10059,8 +10150,10 @@ CM-06:
           - label: 7.
             prose: All deviations from existing USGCB, NCP, DISA and/or NSA configurations
               must be documented.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization establishes and documents mandatory configuration
@@ -10255,8 +10348,10 @@ CM-07:
         prose: The organization must provide timely responses, as defined by the CISO,
           to informational requests for organizational configuration status and posture
           information.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: 'CSPs must implement this Standard (CM-7 CSP.1) as a replacement for the
@@ -10377,8 +10472,10 @@ CM-07(01):
       - label: Std.2
         prose: Raw security information/results from relevant automated tools must be
           available in an unaltered format to the CCIC.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: CSPs must implement this Standard (CM-7(1) CSP.1) as a replacement for
@@ -10742,8 +10839,10 @@ CM-08:
         - label: (a)
           prose: The inventory must identify other FISMA systems from which controls
             are inherited.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization develops, documents, and maintains an inventory
@@ -10931,8 +11030,10 @@ CM-08(03):
       - label: Std.1
         prose: All components within the system authorization boundary must be monitored
           in compliance with information security continuous monitoring (ISCM) requirements.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: 'CSPs must implement this Standard (CM-8(3) CSP.1) as a replacement for
@@ -11343,8 +11444,10 @@ CP-02:
       - label: Std.2
         prose: The organization must verify that the provisioned implementation being
           assessed and/or monitored meets users' needs and is an approved system configuration.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization defines a list of key contingency personnel
@@ -11777,8 +11880,10 @@ CP-04:
       prose: Reviews the contingency plan test results; andc. Initiates corrective
         actions, if needed.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: Contingency plan test results will be made available to the CMS business
@@ -11790,7 +11895,7 @@ CP-04:
         execute the plan.
   guidance:
   - prose: >+
-       Methods for testing contingency plans to determine the effectiveness of the plans and 
+      Methods for testing contingency plans to determine the effectiveness of the plans and 
       to identify potential weaknesses in the plans include for example, walk-through and 
       tabletop exercises, checklists, simulations (parallel, full interrupt), and comprehensive 
       exercises. Organizations conduct testing based on the continuity requirements in contingency 
@@ -11836,10 +11941,13 @@ CP-04(01):
   - prose: The organization coordinates contingency plan testing with organizational
       elements responsible for related plans.
   implementation:
-  - prose: 'High & Moderate:\n\n
+  - prose: >+
+      High & Moderate:
+
+
       Organizations require a suite of plans to prepare themselves for response,
       continuity, recovery, and resumption of mission/business processes and information
-      systems in the event of a disruption. Each plan has a specific purpose and scope:'
+      systems in the event of a disruption. Each plan has a specific purpose and scope:
     parts:
     - label: 1.
       prose: Continuity of Operations Plan (COOP)
@@ -12117,8 +12225,10 @@ CP-07:
       prose: Ensures that the alternate processing site provides information security
         safeguards equivalent to that of the primary site.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization defines a resumption time period consistent
@@ -12336,8 +12446,10 @@ CP-08:
         prose: Ensure alternate telecommunications service level agreements (SLAs) are
           in place to permit resumption of system Recovery Time Objectives (RTO) and
           business functions Maximum Tolerable Downtimes (MTD).
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization defines a resumption time period consistent
@@ -12574,8 +12686,10 @@ CP-09:
       - label: Std.2
         prose: Backups must be compliant with CMS requirements for protecting data at
           rest. (see SC-28)
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Ensure that a current, retrievable, copy of personally identifiable information
@@ -12647,8 +12761,10 @@ CP-09(01):
       every three months for High systems or six months for Moderate systems, to verify
       media reliability and information integrity.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (CP-9(1) CSP.1) as a replacement for
@@ -12703,20 +12819,27 @@ CP-09(03):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization stores backup copies of the operating system and other
-      critical information system software, as well as copies of the information system
-      inventory (including hardware, software, and firmware components) in a separate
-      facility or in a fire-rated container that is not collocated with the operational
-      system.\n\n
-      Systems defined as CSPs:\n\n
+  - prose: >+
       The organization stores backup copies of the operating system and other
       critical information system software, as well as copies of the information system
       inventory (including hardware, software, and firmware components) in a separate
       facility or in a fire-rated container that is not collocated with the operational
-      system.'
+      system.
+
+
+      Systems defined as CSPs:
+
+
+      The organization stores backup copies of the operating system and other
+      critical information system software, as well as copies of the information system
+      inventory (including hardware, software, and firmware components) in a separate
+      facility or in a fire-rated container that is not collocated with the operational
+      system.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (CP-9(3) CSP.1) as a replacement for
@@ -13381,8 +13504,10 @@ IA-02(08):
   - prose: The information system implements replay-resistant authentication mechanisms
       for network access to privileged accounts.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (IA-2(8) CSP.1) as a replacement for
@@ -13558,8 +13683,10 @@ IA-03:
       system must follow OMB Memorandum 04-04, E-Authentication Guidance for Federal
       Agencies.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (IA-3) CSP.1) as a replacement for the
@@ -13644,8 +13771,10 @@ IA-04:
       involving, personally identifiable information (PII) is attributable to a unique
       individual.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization prevents reuse of user or device identifiers
@@ -13806,8 +13935,10 @@ IA-05:
       prose: Changing authenticators for group/role accounts when membership to those
         accounts changes.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization manages information system authenticators for
@@ -13926,8 +14057,10 @@ IA-05(01):
       prose: Allows the use of a temporary password for system logons with an immediate
         change to a permanent password.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: 'CSPs must implement this Standard (IA-5(1) CSP.1) as a replacement for
@@ -14042,8 +14175,10 @@ IA-05(03):
       be conducted in person before a designated registration authority with authorization
       by defined personnel or roles (defined in the applicable security plan).
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization requires that the registration process for
@@ -14486,9 +14621,10 @@ IR-01:
           prose: Incident response policy within every three (3) years; and
         - label: 2.
           prose: Incident response procedures within every three (3) years.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        Applicable personnel (item a) include the Incident Response Team as required
-        by OMB M-17-12.'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        Applicable personnel (item a) include the Incident Response Team as required by OMB M-17-12.
   implementation:
   guidance:
   - prose: >+
@@ -14704,8 +14840,10 @@ IR-03:
           response capability test, and any response capabilities that were not exercised
           as part of the previous actual incident response activities must be additionally
           exercised (or simulated) as part of the test.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization defines tests and/or exercises in accordance
@@ -14867,9 +15005,10 @@ IR-03(02):
   assurance: assurance
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Coordinates incident response testing with organizational elements responsible
-      for related plans.'
+  - prose: |
+      The organization:
+      
+      Coordinates incident response testing with organizational elements responsible for related plans.
   implementation:
   guidance:
   - prose: >
@@ -15041,9 +15180,11 @@ IR-04(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
+  - prose: |
+      The organization:
+
       Employs automated mechanisms to support the incident handling process.
-  implementation:'
+  implementation:
     parts:
     - prose: 'High:'
       parts:
@@ -15126,17 +15267,16 @@ IR-04(03):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Identifies incidents and responses to classes of incident to ensure continuation
-      of organizational missions and business functions. Classes of incident are based
-      on attack vector (e.g., attack via external media, the web, improper system
-      use, loss of equipment) and serve to further define specific handling procedures.\n\n
-      Systems processing, storing, or transmitting PHI:\n\n
-      The organization:\n\n
-      Identifies emergencies, vandalism, security incidents, or natural disasters
-      and reasonable and appropriate policies and procedures consistent with federal
-      laws and regulations and organizational requirements to ensure continuation
-      of organizational missions and business functions.'
+  - prose: |
+      The organization:
+
+      Identifies incidents and responses to classes of incident to ensure continuation of organizational missions and business functions. Classes of incident are based on attack vector (e.g., attack via external media, the web, improper system use, loss of equipment) and serve to further define specific handling procedures.
+
+      Systems processing, storing, or transmitting PHI:
+
+      The organization:
+
+      Identifies emergencies, vandalism, security incidents, or natural disasters and reasonable and appropriate policies and procedures consistent with federal laws and regulations and organizational requirements to ensure continuation of organizational missions and business functions.'
   implementation:
   - prose: 'High:'
     parts:
@@ -15197,9 +15337,10 @@ IR-04(04):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Correlates incident information and individual incident responses to achieve
-      an organization-wide perspective on incident awareness and response.'
+  - prose: |
+      The organization:
+      
+      Correlates incident information and individual incident responses to achieve an organization-wide perspective on incident awareness and response.
   implementation:
   guidance:
   - prose: >
@@ -15234,8 +15375,10 @@ IR-04(06):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Defines and implements the incident handling capability for insider threats.'
+  - prose: |
+      The organization:
+
+      Defines and implements the incident handling capability for insider threats.
   implementation:
   guidance:
   - prose: >
@@ -15268,8 +15411,10 @@ IR-04(07):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Coordinates incident handling capability for insider threats across the CMS enterprise.'
+  - prose: |
+      The organization:
+      
+      Coordinates incident handling capability for insider threats across the CMS enterprise.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -15310,8 +15455,10 @@ IR-05:
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Tracks and documents all physical, information security, and privacy incidents.'
+  - prose: |
+      The organization:
+      
+      Tracks and documents all physical, information security, and privacy incidents.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -15377,9 +15524,10 @@ IR-05(01):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to assist in the tracking of security incidents
-      and in the collection and analysis of incident information.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to assist in the tracking of security incidents and in the collection and analysis of incident information.
   implementation:
   guidance:
   - prose: >
@@ -15435,8 +15583,10 @@ IR-06:
         prose: Designated authorities must include the CCIC. The CCIC provides oversight
           of information security and privacy, to include incident reporting, for each
           FISMA system operated by or on behalf of CMS.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: CSPs must implement this Standard (IA-6 CSP.1) as a replacement for the
@@ -15516,8 +15666,10 @@ IR-06(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to assist in the reporting of security incidents.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to assist in the reporting of security incidents.
   implementation:
   guidance:
   references:
@@ -15551,10 +15703,10 @@ IR-07:
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Provides an incident response support resource, integral to the organizational
-      incident response capability that offers advice and assistance to users of the
-      information system for the handling and reporting of security incidents.'
+  - prose: |
+      The organization:
+      
+      Provides an incident response support resource, integral to the organizational incident response capability that offers advice and assistance to users of the information system for the handling and reporting of security incidents.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -15618,9 +15770,10 @@ IR-07(01):
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to increase the availability of incident response-related
-      information and support.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to increase the availability of incident response-related information and support.
   implementation:
   guidance:
   - prose: >
@@ -15813,8 +15966,10 @@ IR-09:
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Responds to information spills by'
+  - prose: |
+      The organization:
+      
+      Responds to information spills by
     parts:
     - label: a.
       prose: Identifying the specific information involved in the information system
@@ -15874,8 +16029,10 @@ IR-09(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Assigns responsibility for responding to information spills to defined personnel or roles.'
+  - prose: |
+      The organization:
+      
+      Assigns responsibility for responding to information spills to defined personnel or roles.
   implementation:
   guidance:
   references:
@@ -15902,8 +16059,10 @@ IR-09(02):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Provides information spillage response training no less often than annually.'
+  - prose: |
+      The organization:
+      
+      Provides information spillage response training no less often than annually.
   implementation:
   guidance:
   references:
@@ -15933,10 +16092,10 @@ IR-09(03):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Implements processes and procedures to ensure that organizational personnel
-      impacted by information spills can continue to carry out assigned tasks while
-      contaminated systems are undergoing corrective actions.'
+  - prose: |
+      The organization:
+      
+      Implements processes and procedures to ensure that organizational personnel impacted by information spills can continue to carry out assigned tasks while contaminated systems are undergoing corrective actions.
   implementation:
   guidance:
   - prose: >
@@ -15969,10 +16128,10 @@ IR-09(04):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Employs CMS rules of behavior and defined security and privacy safeguards
-      to address the risk of personnel exposed to information not within assigned
-      access authorizations.'
+  - prose: |
+      The organization:
+      
+      Employs CMS rules of behavior and defined security and privacy safeguards to address the risk of personnel exposed to information not within assigned access authorizations.
   implementation:
   guidance:
   - prose: >
@@ -16006,9 +16165,10 @@ IR-10:
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Establishes an integrated team of forensic/malicious code analysts, tool
-      developers, and real-time operations personnel.'
+  - prose: |
+      The organization:
+      
+      Establishes an integrated team of forensic/malicious code analysts, tool developers, and real-time operations personnel.
   implementation:
   guidance:
   - prose: >+
@@ -16088,10 +16248,13 @@ MA-01:
           prose: System maintenance policy within every three (3) years; and
         - label: 2.
           prose: System maintenance procedures within every three (3) years.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         System maintenance policy and procedures must ensure that contractors having
         access to records (i.e., files or data) maintained in a system of records are
-        contractually bound to be covered by the Privacy Act.'
+        contractually bound to be covered by the Privacy Act.
   implementation:
   guidance:
   - prose: >+
@@ -16263,8 +16426,10 @@ MA-03:
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Approves, controls, and monitors information system maintenance tools.'
+  - prose: |
+      The organization:
+      
+      Approves, controls, and monitors information system maintenance tools.
   implementation:
   guidance:
   - prose: >
@@ -16302,9 +16467,10 @@ MA-03(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Inspects the maintenance tools carried into a facility by maintenance personnel
-      for improper or unauthorized modifications.'
+  - prose: |
+      The organization:
+      
+      Inspects the maintenance tools carried into a facility by maintenance personnel for improper or unauthorized modifications.
   implementation:
   guidance:
   - prose: >
@@ -16335,9 +16501,10 @@ MA-03(02):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Checks media containing diagnostic and test programs for malicious code
-      before the media are used in the information system.'
+  - prose: |
+      The organization:
+      
+      Checks media containing diagnostic and test programs for malicious code before the media are used in the information system.
   implementation:
   guidance:
   - prose: >
@@ -16367,9 +16534,10 @@ MA-03(03):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Prevents the unauthorized removal of maintenance equipment containing organizational
-      information by:'
+  - prose: |
+      The organization:
+      
+      Prevents the unauthorized removal of maintenance equipment containing organizational information by:
     parts:
     - label: a.
       prose: Verifying that there is no organizational information contained on the
@@ -16382,8 +16550,10 @@ MA-03(03):
       prose: Obtaining an exemption, in writing, from the CMS CIO or his/her designated
         representative explicitly authorizing removal of the equipment from the facility.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: 'CSPs must implement this Standard (MA-3(3) CSP.1) as a replacement for
@@ -16427,11 +16597,10 @@ MA-04:
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Monitors and controls nonlocal maintenance and diagnostic activities; and
-      prohibits nonlocal system maintenance unless explicitly authorized, in writing,
-      by the CIO or his/her designated representative. If nonlocal maintenance and
-      diagnostic actives are authorized, the organization:'
+  - prose: |
+      The organization:
+      
+      Monitors and controls nonlocal maintenance and diagnostic activities; and prohibits nonlocal system maintenance unless explicitly authorized, in writing, by the CIO or his/her designated representative. If nonlocal maintenance and diagnostic actives are authorized, the organization:
     parts:
     - label: a.
       prose: Allows the use of nonlocal maintenance and diagnostic tools only as consistent
@@ -16540,10 +16709,10 @@ MA-04(02):
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Documents in the security plan for the information system, the policies
-      and procedures for the establishment and use of nonlocal maintenance and diagnostic
-      connections.'
+  - prose: |
+      The organization:
+      
+      Documents in the security plan for the information system, the policies and procedures for the establishment and use of nonlocal maintenance and diagnostic connections.
   implementation:
   guidance:
   references:
@@ -16819,13 +16988,15 @@ MA-06:
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Obtains maintenance support and/or spare parts for defined key information
-      system components (defined in the applicable security plan) within the applicable
-      RTO specified in the contingency plan.'
+  - prose: |
+      The organization:
+      
+      Obtains maintenance support and/or spare parts for defined key information system components (defined in the applicable security plan) within the applicable RTO specified in the contingency plan.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (MA-6 CSP.1) as a replacement for the
@@ -16897,13 +17068,18 @@ MP-01:
           prose: Media protection policy within every three (3) years; and
         - label: 2.
           prose: Media protection procedures within every three (3) years.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
         "Applicable personnel," as referred to in MP-1(a), includes employees
         and contractors with potential access to personally identifiable information
-        (PII).\n\n
-        Systems processing, storing, or transmitting PHI:\n\n
+        (PII).
+
+
+        Systems processing, storing, or transmitting PHI:
+
         "Applicable personnel," as referred to in MP-1(a), includes employees
-        and contractors with potential access to protected health information (PHI).'
+        and contractors with potential access to protected health information (PHI).
   implementation:
   guidance:
   - prose: >
@@ -16943,6 +17119,7 @@ MP-02:
   control:
   - prose: |
       The organization:
+
       Restricts access to sensitive digital and non-digital media pursuant to Appendix I of the HHS Information System Security and Privacy Policy (IS2P) and in compliance with the latest revision of NIST SP 800-88, Guidelines for Media Sanitization, to defined personnel or roles (defined in the applicable security plan) by disabling:   
       
       - disabling CD/DVD writers and allowing access to using CD/DVD viewing and downloading capabilities only to persons specified or in defined roles; and   
@@ -16956,8 +17133,10 @@ MP-02:
       
       Sensitive digital and non-digital media includes media containing protected health information (PHI).
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (MP-2 CSP.1) as a replacement for the
@@ -17033,8 +17212,10 @@ MP-03:
         in writing, by the CMS CIO or his/her designated representative, from marking
         if the media remains within a secure environment.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs do not exempt any removable media types from marking.
@@ -17099,21 +17280,28 @@ MP-04:
       - label: b.
         prose: Protects information system media until the media are destroyed or sanitized
           using approved equipment, techniques, and procedures.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Digital and non-digital media includes removable media that contains personally
         identifiable information (PII). This media must be stored a securable area or
-        in a locked container.'
+        in a locked container.
   implementation:
   - parts:
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: If PII is recorded on magnetic media with other data, the media should
           be protected as if all the data contained consisted of personally identifiable
           information.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: This Standard (MP-4 CSP.1) replaces MP-04 for Cloud Service Providers.
@@ -17225,16 +17413,20 @@ MP-05:
         Protects and controls digital media that contains protected health information (PHI) during transport outside of controlled areas using a FIPS 140-2 validated cryptographic module operating in the FIPS-approved mode of operation.
   implementation:
   - parts:
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Protect and control non-digital PII/PHI media during transport outside
           of controlled areas and restrict the activities associated with transport
           of such media to authorized personnel. Non-digital PII must be in locked cabinets
           or sealed packing cartons while in transit.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: CSPs protect and control magnetic tapes, external/removable hard drives,
@@ -17306,9 +17498,10 @@ MP-05(03):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Employs an identified custodian during transport of information system media
-      outside of controlled areas.'
+  - prose: |
+      The organization:
+      
+      Employs an identified custodian during transport of information system media outside of controlled areas.
   implementation:
   guidance:
   - prose: >
@@ -17400,9 +17593,10 @@ MP-06:
   priority: P1
   control:
   - parts:
-    - prose: 'The organization:\n\n
-        In accordance with the latest revision of NIST SP 800-88, Guidelines for
-        Media Sanitization, and HHS IS2P Appendix I:'
+    - prose: |
+        The organization:
+        
+        In accordance with the latest revision of NIST SP 800-88, Guidelines for Media Sanitization, and HHS IS2P Appendix I:
       parts:
       - label: a.
         prose: Sanitizes both digital and non-digital information system media prior
@@ -17446,8 +17640,10 @@ MP-06:
       - label: Std.1
         prose: Finely shred, using a minimum of cross-cut shredding, hard-copy documents,
           using approved equipment, techniques, and procedures.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: CSPs support the capability to sanitize disk space when released from
@@ -17510,9 +17706,10 @@ MP-06(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Reviews, approves, tracks, documents, and verifies media sanitization and
-      disposal actions.'
+  - prose: |
+      The organization:
+      
+      Reviews, approves, tracks, documents, and verifies media sanitization and disposal actions.
   implementation:
   guidance:
   - prose: >+
@@ -17562,9 +17759,10 @@ MP-06(02):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Tests sanitization equipment and procedures within every three hundred sixty-five
-      (365) days to verify that the intended sanitization is being achieved.'
+  - prose: |
+      The organization:
+      
+      Tests sanitization equipment and procedures within every three hundred sixty-five (365) days to verify that the intended sanitization is being achieved.
   implementation:
   guidance:
   - prose: >
@@ -17595,10 +17793,10 @@ MP-06(03):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Applies nondestructive sanitization techniques to portable storage devices
-      prior to connecting such devices to the information system under the following
-      circumstances:'
+  - prose: |
+      The organization:
+      
+      Applies nondestructive sanitization techniques to portable storage devices prior to connecting such devices to the information system under the following circumstances:
     parts:
     - label: a.
       prose: Prior to initial use after purchase;
@@ -17646,10 +17844,10 @@ MP-06(08):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Provides the capability to purge/wipe information from information systems,
-      system components, and devices either remotely or as defined in the RMH standards
-      and procedures.'
+  - prose: |
+      The organization:
+      
+      Provides the capability to purge/wipe information from information systems, system components, and devices either remotely or as defined in the RMH standards and procedures.
   implementation:
   guidance:
   - prose: >+
@@ -17792,9 +17990,10 @@ MP-07(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Prohibits the use of portable storage devices in organizational information
-      systems when such devices have no identifiable owner.'
+  - prose: |
+      The organization:
+      
+      Prohibits the use of portable storage devices in organizational information systems when such devices have no identifiable owner.
   implementation:
   guidance:
   - prose: >+
@@ -18137,8 +18336,10 @@ PE-02:
         every (90 High, 180 Moderate, 365 Low) days; andd. Removes individuals from
         the facility access list when access is no longer required.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization reviews and approves the access list and authorization
@@ -18193,9 +18394,10 @@ PE-02(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Authorizes physical access to the facility where the information system
-      resides based on position or role.'
+  - prose: |
+      The organization:
+      
+      Authorizes physical access to the facility where the information system resides based on position or role.
   implementation:
   guidance:
   - prose: >+
@@ -18300,8 +18502,10 @@ PE-03:
       - label: Std.2
         prose: Store and operate servers in physically secure environments protected
           from unauthorized access.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High & Moderate:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High & Moderate:
       parts:
       - label: PRIV.1
         prose: Create a restricted area, security room, or locked room to control access
@@ -18390,12 +18594,10 @@ PE-03(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Enforces physical access authorizations to the information system in addition
-      to the physical access controls for the facility at defined physical spaces
-      (defined in the applicable security plan) containing a concentration of information
-      system components (e.g., server rooms, media storage areas, data and communications
-      centers, etc.).'
+  - prose: |
+      The organization:
+      
+      Enforces physical access authorizations to the information system in addition to the physical access controls for the facility at defined physical spaces (defined in the applicable security plan) containing a concentration of information system components (e.g., server rooms, media storage areas, data and communications centers, etc.).
   implementation:
   guidance:
   - prose: >
@@ -18426,10 +18628,10 @@ PE-04:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Controls physical access to telephone closets and information system distribution
-      and transmission lines within organizational facilities using defined security
-      safeguards (defined in the applicable security plan).'
+  - prose: |
+      The organization:
+      
+      Controls physical access to telephone closets and information system distribution and transmission lines within organizational facilities using defined security safeguards (defined in the applicable security plan).
   implementation:
   - prose: 'High & Moderate:'
     parts:
@@ -18474,9 +18676,10 @@ PE-05:
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Controls physical access to information system output devices to prevent
-      unauthorized individuals from obtaining the output.'
+  - prose: |
+      The organization:
+      
+      Controls physical access to information system output devices to prevent unauthorized individuals from obtaining the output.
   implementation:
   guidance:
   - prose: >+
@@ -18542,8 +18745,10 @@ PE-06:
       prose: Coordinates results of reviews and investigations with the organization's
         incident response capability.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization reviews physical access logs at least semi-annually.
@@ -18587,8 +18792,10 @@ PE-06(01):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Monitors physical intrusion alarms and surveillance equipment.'
+  - prose: |
+      The organization:
+      
+      Monitors physical intrusion alarms and surveillance equipment.
   implementation:
   guidance:
   references:
@@ -18616,7 +18823,9 @@ PE-06(04):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
+  - prose: |
+      The organization:
+      
       Monitors physical access to the information system, in addition to the physical
       access monitoring of the facility, at defined physical spaces (defined in the
       applicable security plan) containing a concentration of information system components
@@ -18717,9 +18926,10 @@ PE-08(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to facilitate the maintenance and review of
-      visitor access records.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to facilitate the maintenance and review of visitor access records.
   implementation:
   guidance:
   references: ''
@@ -18746,9 +18956,10 @@ PE-09:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Protects power equipment and power cabling for the information system from
-      damage and destruction.'
+  - prose: |
+      The organization:
+      
+      Protects power equipment and power cabling for the information system from damage and destruction.
   implementation:
   - prose: 'High & Moderate:'
     parts:
@@ -18806,8 +19017,10 @@ PE-10:
         prose: Implements and maintains a master power switch or emergency cut-off switch,
           prominently marked and protected by a cover, for data centers, servers, and
           mainframe rooms.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization defines emergency shutoff switch locations.
@@ -18840,11 +19053,10 @@ PE-11:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Provides a short-term uninterruptible power supply to facilitate an orderly
-      shutdown of the information system and/or transition of the information system
-      to a long-term alternate power source in the event of a primary power source
-      loss.'
+  - prose: |
+      The organization:
+      
+      Provides a short-term uninterruptible power supply to facilitate an orderly shutdown of the information system and/or transition of the information system to a long-term alternate power source in the event of a primary power source loss.
   implementation:
   guidance:
   references:
@@ -18872,10 +19084,10 @@ PE-11(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Provides a long-term alternate power supply for the information system that
-      can maintain minimally required operational capability in the event of an extended
-      loss of the primary power source.'
+  - prose: |
+      The organization:
+      
+      Provides a long-term alternate power supply for the information system that can maintain minimally required operational capability in the event of an extended loss of the primary power source.
   implementation:
   - prose: 'High:'
     parts:
@@ -18912,10 +19124,10 @@ PE-12:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs and maintains automatic emergency lighting for the information system
-      that activates in the event of a power outage or disruption and covers emergency
-      exits and evacuation routes within the facility.'
+  - prose: |
+      The organization:
+      
+      Employs and maintains automatic emergency lighting for the information system that activates in the event of a power outage or disruption and covers emergency exits and evacuation routes within the facility.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -18957,9 +19169,10 @@ PE-13:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs and maintains fire suppression and detection devices/systems for
-      the information system that are supported by an independent energy source.'
+  - prose: |
+      The organization:
+      
+      Employs and maintains fire suppression and detection devices/systems for the information system that are supported by an independent energy source.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -19000,11 +19213,10 @@ PE-13(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs fire detection devices/systems for the information system that activate
-      automatically and notify defined personnel or roles (defined in the applicable
-      security plan) and defined emergency responders (defined in the applicable security
-      or safety plan) in the event of a fire.'
+  - prose: |
+      The organization:
+      
+      Employs fire detection devices/systems for the information system that activate automatically and notify defined personnel or roles (defined in the applicable security plan) and defined emergency responders (defined in the applicable security or safety plan) in the event of a fire.
   implementation:
   guidance:
   - prose: >
@@ -19039,11 +19251,10 @@ PE-13(02):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs fire suppression devices/systems for the information system that
-      provide automatic notification of any activation to defined personnel (or roles)
-      and defined emergency responders (defined in the applicable security or safety
-      plan).'
+  - prose: |
+      The organization:
+      
+      Employs fire suppression devices/systems for the information system that provide automatic notification of any activation to defined personnel (or roles) and defined emergency responders (defined in the applicable security or safety plan).
   implementation:
   guidance:
   - prose: >
@@ -19080,9 +19291,10 @@ PE-13(03):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs an automatic fire suppression capability for the information system
-      when the facility is not staffed on a continuous basis.'
+  - prose: |
+      The organization:
+      
+      Employs an automatic fire suppression capability for the information system when the facility is not staffed on a continuous basis.
   implementation:
   guidance:
   references:
@@ -19139,8 +19351,10 @@ PE-14:
       - label: Std.1
         prose: Evaluate the level of alert and follow prescribed guidelines for that
           alert level.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: 'CSPs must implement this Standard (PE-14 CSP.1) as a replacement for
@@ -19190,10 +19404,10 @@ PE-15:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Protects the information system from damage resulting from water leakage
-      by providing master shutoff or isolation valves that are accessible, working
-      properly, and known to key personnel.'
+  - prose: |
+      The organization:
+      
+      Protects the information system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and known to key personnel.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -19235,10 +19449,10 @@ PE-15(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to detect the presence of water near the information
-      system and alerts defined personnel or roles (defined in the applicable security
-      plan).'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to detect the presence of water near the information system and alerts defined personnel or roles (defined in the applicable security plan).
   implementation:
   - prose: 'High:'
     parts:
@@ -19272,13 +19486,15 @@ PE-16:
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Authorizes, monitors, and controls the flow of all information system-related
-      components entering and exiting the facility and maintains records of those
-      items.'
+  - prose: |
+      The organization:
+      
+      Authorizes, monitors, and controls the flow of all information system-related components entering and exiting the facility and maintains records of those items.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: CSPs must implement this Standard (PE-16 CSP.1) as a replacement for the
@@ -19332,8 +19548,10 @@ PE-17:
       prose: Provides a means for employees to communicate with information security
         personnel in case of security incidents or problems.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization defines management, operational, and technical
@@ -19385,10 +19603,10 @@ PE-18:
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Positions information system components within the facility to minimize
-      potential damage from physical and environmental hazards, and to minimize the
-      opportunity for unauthorized access.'
+  - prose: |
+      The organization:
+      
+      Positions information system components within the facility to minimize potential damage from physical and environmental hazards, and to minimize the opportunity for unauthorized access.
   implementation:
   guidance:
   - prose: >+
@@ -19441,11 +19659,10 @@ PE-18(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Plans the location or site of the facility where the information system
-      resides considering physical and environmental hazards associated with existing
-      facilities and considers the physical and environmental hazards in its risk
-      mitigation strategy.'
+  - prose: |
+      The organization:
+      
+      Plans the location or site of the facility where the information system resides considering physical and environmental hazards associated with existing facilities and considers the physical and environmental hazards in its risk mitigation strategy.
   implementation:
   guidance:
   references: ''
@@ -19494,12 +19711,16 @@ PL-01:
           prose: Security planning policy within every three (3) years; and
         - label: 2.
           prose: Security planning procedures within every three (3) years.
-    - prose: 'Systems processing, storing, or transmitting PHI:\n\n
-        The organization:\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PHI:
+
+
+        The organization:
+
         Retains the policies and procedures in written form (which may be electronic)
         for 6 years from the date of its creation or the date when it was last in effect,
         whichever is later. The organization makes the documentation available to those
-        persons responsible for implementing the procedures to which the document pertains.'
+        persons responsible for implementing the procedures to which the document pertains.
   implementation:
   guidance:
   - prose: >+
@@ -19700,11 +19921,10 @@ PL-02(03):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Plans and coordinates security-related activities affecting the information
-      system with affected internal or external stakeholders, groups, or organizations
-      before conducting such activities to reduce the impact on other organizational
-      entities.'
+  - prose: |
+      The organization:
+      
+      Plans and coordinates security-related activities affecting the information system with affected internal or external stakeholders, groups, or organizations before conducting such activities to reduce the impact on other organizational entities.
   implementation:
   guidance:
   - prose: >
@@ -19780,12 +20000,15 @@ PL-04:
           employees and contractors that the use of CMS information resources is subject
           to the HHS Policy for Monitoring Employee Use of HHS IT Resources; andg. In
           addition to the HHS RoB, the organization may define a system-level RoB acknowledgement.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Pursuant to OMB M-17-12, organizational rules of behavior must include a
         policy outlining the rules of behavior to safeguard personally identifiable
         information (PII) and identifying consequences and corrective actions for failure
         to follow these rules. Consequences should be commensurate with level of responsibility
-        and type of PII involved.'
+        and type of PII involved.
   implementation:
   guidance:
   - prose: >+
@@ -19840,9 +20063,10 @@ PL-04(01):
   assurance: assurance
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Includes in the rules of behavior, explicit restrictions on the use of social
-      media/networking sites and posting organizational information on public websites.'
+  - prose: |
+      The organization:
+      
+      Includes in the rules of behavior, explicit restrictions on the use of social media/networking sites and posting organizational information on public websites.
   implementation:
   guidance:
   - prose: |
@@ -19995,11 +20219,14 @@ PS-01:
           prose: Personnel security policy within three (3) years; and
         - label: 2.
           prose: Personnel security procedures within every three (3) years.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         The personnel security policies and procedures must address the different
         levels of background investigations, or other personnel security requirements,
         necessary to access different levels of personally identifiable information
-        (PII).'
+        (PII).
   implementation:
   guidance:
   - prose: >+
@@ -20080,10 +20307,13 @@ PS-02:
           within three years or whenever a position's duties are changed/revised/realigned,
           and ensures that these risk designations are consistent with OPM policy and
           guidance. in accordance with CMS Personnel Security Policy
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Whether a member of the workforce will be working with personally identifiable
         information (PII) is a factor in determining the screening criteria for working
-        in the position.'
+        in the position.
   implementation:
   guidance:
   - prose: >+
@@ -20152,10 +20382,13 @@ PS-03:
           prose: Been vetted in accordance with agency policy; and
         - label: 2.
           prose: Signed the appropriate access agreements.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Individuals that work with personally identifiable information (PII) are
         screened prior to being provided access to the PII and re-screened as determined
-        by the organization.'
+        by the organization.
   implementation:
   - parts:
     - prose: 'High, Moderate & Low:'
@@ -20166,8 +20399,10 @@ PS-03:
           in the HHS Personnel Security/Suitability Handbook. Assign other individuals
           with Public Trust positions the appropriate sensitivity level as defined in
           the HHS Personnel Security/Suitability Handbook.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: 'The organization rescreens individuals per the following:'
@@ -20224,9 +20459,10 @@ PS-03(03):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Ensures that individuals accessing an information system processing, storing,
-      or transmitting information requiring special protection'
+  - prose: |
+      The organization:
+      
+      Ensures that individuals accessing an information system processing, storing, or transmitting information requiring special protection
     parts:
     - label: a.
       prose: Have valid access authorizations that are demonstrated by assigned official
@@ -20373,10 +20609,10 @@ PS-04(02):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to notify defined personnel/roles as designated
-      by the organization (e.g., Human Resources, managers/supervisors, system administrators,
-      physical security personnel) upon termination of an individual.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to notify defined personnel/roles as designated by the organization (e.g., Human Resources, managers/supervisors, system administrators, physical security personnel) upon termination of an individual.
   implementation:
   - prose: 'High:'
     parts:
@@ -20446,13 +20682,18 @@ PS-05:
       - label: d.
         prose: Notifying defined personnel or roles (defined in the applicable security
           plan) within one (1) business day.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Individuals that work with personally identifiable information (PII) are
         screened prior to being provided access to the PII and re-screened as determined
-        by the organization.'
+        by the organization.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization reviews logical and physical access authorizations
@@ -20757,11 +20998,14 @@ RA-01:
           prose: Risk assessment policy within every three (3) years and
         - label: 2.
           prose: Risk assessment procedures within every three (3) years.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Organization risk assessment policy and procedures must incorporate the
         requirements to conduct information system privacy risk management processes
         across the life cycle of an information system collecting, using, maintaining,
-        and/or disseminating personally identifiable information (PII).'
+        and/or disseminating personally identifiable information (PII).
   implementation:
   guidance:
   - prose: >+
@@ -20823,10 +21067,13 @@ RA-02:
       - label: c.
         prose: Ensures the security categorization decision is reviewed and approved
           by the authorizing official or authorizing official's designated representative.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         Involve the Senior Official for Privacy, or their designee, when conducting
         the security categorization process for information systems containing personally
-        identifiable information (PII) or protected health information (PHI).'
+        identifiable information (PII) or protected health information (PHI).
   implementation:
   guidance:
   - prose: >+
@@ -20924,8 +21171,10 @@ RA-03:
         
         Documents risk assessment results in a HIPAA Risk Analysis, and associated risks to PHI must be identified within the overall risk assessment. All risk assessment documentation must reflect these findings. All HIPAA Risk Analysis documentation must be maintained for 6 years from the date of creation or date it was last in effect – whichever is later.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization documents risk assessment results in the security
@@ -21046,8 +21295,10 @@ RA-05:
           security control assessments with affected/related stakeholders on a "need
           to know" basis to help eliminate similar vulnerabilities in other information
           systems (i.e., systemic weaknesses or deficiencies).
-    - prose: 'Systems defined as CSPs:\n\n
-        This control requirement replaces RA-05(a.):'
+    - prose: |
+        Systems defined as CSPs:
+
+        This control requirement replaces RA-05(a.):
       parts:
       - label: a.
         prose: Scans for vulnerabilities in the information system and hosted applications
@@ -21081,8 +21332,10 @@ RA-05:
         prose: The organization must provide timely responses, as defined by the CISO,
           to informational requests for organizational monitoring status and security
           posture information.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization scans for vulnerabilities in the information
@@ -21142,9 +21395,10 @@ RA-05(01):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs vulnerability scanning tools that include the capability to readily
-      update the list of information system vulnerabilities scanned.'
+  - prose: |
+      The organization:
+      
+      Employs vulnerability scanning tools that include the capability to readily update the list of information system vulnerabilities scanned.
   implementation:
   guidance:
   - prose: >+
@@ -21222,10 +21476,10 @@ RA-05(03):
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Employs vulnerability scanning procedures that can identify/demonstrate
-      the breadth and depth of coverage (i.e., information system components scanned
-      and vulnerabilities checked).'
+  - prose: |
+      The organization:
+      
+      Employs vulnerability scanning procedures that can identify/demonstrate the breadth and depth of coverage (i.e., information system components scanned and vulnerabilities checked).
   implementation:
   guidance:
   - prose: >+
@@ -21254,10 +21508,10 @@ RA-05(04):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Determines what information about the information system is discoverable
-      by adversaries, and subsequently takes appropriate corrective actions to limit
-      discoverable system information.'
+  - prose: |
+      The organization:
+      
+      Determines what information about the information system is discoverable by adversaries, and subsequently takes appropriate corrective actions to limit discoverable system information.
   implementation:
   guidance:
   - prose: >+
@@ -21425,11 +21679,14 @@ SA-02:
       - label: d.
         prose: Establishes a discrete line item in CMS's programming and budgeting documentation
           for the implementation and management of information systems security.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         As part of the capital planning and investment control process, the organization
         must determine, document, and allocate resources required to protect the privacy
         and confidentiality of personally identifiable information (PII) in the information
-        system.'
+        system.
   implementation:
   guidance:
   - prose: >+
@@ -21560,12 +21817,10 @@ SA-04:
   priority: P1
   control:
   - parts:
-    - prose: 'The organization:\n\n
-        Includes the following requirements, descriptions, and criteria, explicitly
-        or by reference, in the acquisition contract for the information system, system
-        component, or information system service in accordance with applicable federal
-        laws, Executive Orders, directives, policies, regulations, standards, guidelines,
-        and organizational mission/business needs:'
+    - prose: |
+        The organization:
+        
+        Includes the following requirements, descriptions, and criteria, explicitly or by reference, in the acquisition contract for the information system, system component, or information system service in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs:
       parts:
       - label: a.
         prose: Security functional requirements;
@@ -21582,10 +21837,13 @@ SA-04:
           in which the system is intended to operate; and
       - label: g.
         prose: Acceptance criteria.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         When acquiring information systems, components, or services used to store,
         process, or transmit personally identifiable information (PII), ensure the following,
-        in consultation with the privacy office, are included in the acquisition contract:'
+        in consultation with the privacy office, are included in the acquisition contract:
       parts:
       - label: a.
         prose: List of security and privacy controls necessary to ensure protection of
@@ -21668,10 +21926,10 @@ SA-04(01):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or information
-      system service to provide a description of the functional properties of the
-      security controls to be employed.'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to provide a description of the functional properties of the security controls to be employed.
   implementation:
   guidance:
   - prose: >+
@@ -21703,10 +21961,10 @@ SA-04(02):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or
-      information system service to provide design and implementation information
-      for the security controls to be employed that includes:'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to provide design and implementation information for the security controls to be employed that includes:
     parts:
     - label: a.
       prose: Security-relevant external system interfaces at sufficient detail to understand
@@ -21748,11 +22006,10 @@ SA-04(08):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or information
-      system service to produce a plan for the continuous monitoring of security control
-      effectiveness that meets CMS and Federal requirements (e.g., Continuous Diagnostics
-      and Mitigation, ongoing authorization).'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to produce a plan for the continuous monitoring of security control effectiveness that meets CMS and Federal requirements (e.g., Continuous Diagnostics and Mitigation, ongoing authorization).
   implementation:
   guidance:
   - prose: >+
@@ -21795,10 +22052,10 @@ SA-04(09):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or information
-      system service to identify early in the system development life cycle, the functions,
-      ports, protocols, and services intended for organizational use.'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to identify early in the system development life cycle, the functions, ports, protocols, and services intended for organizational use.
   implementation:
   guidance:
   - prose: >+
@@ -21841,9 +22098,10 @@ SA-04(10):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs only information technology products on the FIPS 201-approved products
-      list for PIV capability implemented within organizational information systems.'
+  - prose: |
+      The organization:
+      
+      Employs only information technology products on the FIPS 201-approved products list for PIV capability implemented within organizational information systems.
   implementation:
   guidance:
   references:
@@ -21957,9 +22215,10 @@ SA-08:
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Applies information system security engineering principles in the specification,
-      design, development, implementation, and modification of the information system.'
+  - prose: |
+      The organization:
+      
+      Applies information system security engineering principles in the specification, design, development, implementation, and modification of the information system.
   implementation:
   - prose: 'High & Moderate:'
     parts:
@@ -22124,10 +22383,10 @@ SA-09(02):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Requires providers of external information system services, as defined in
-      the applicable System Security Plan, to identify the functions, ports, protocols,
-      and other services required for the use of such services.'
+  - prose: |
+      The organization:
+      
+      Requires providers of external information system services, as defined in the applicable System Security Plan, to identify the functions, ports, protocols, and other services required for the use of such services.
   implementation:
   guidance:
   - prose: >+
@@ -22230,9 +22489,10 @@ SA-10:
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or
-      information system service to:'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to:
     parts:
     - label: a.
       prose: Perform configuration management during system, component, or service
@@ -22297,9 +22557,10 @@ SA-10(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or information
-      system service to enable integrity verification of software and firmware components.'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to enable integrity verification of software and firmware components.
   implementation:
   guidance:
   - prose: >+
@@ -22338,9 +22599,10 @@ SA-11:
   priority: P2
   control:
   - parts:
-    - prose: 'The organization:\n\n
-        Requires the developer of the information system, system component, or information
-        system service to'
+    - prose: |
+        The organization:
+      
+        Requires the developer of the information system, system component, or information system service to
       parts:
       - label: a.
         prose: Create and implement a security assessment plan in accordance with, but
@@ -22354,9 +22616,12 @@ SA-11:
       - label: d.
         prose: Implement a verifiable flaw remediation process; ande. Correct flaws identified
           during security testing/evaluation.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         For information systems containing PII, the organization requires the developer
-        of the information system, system component, or information system service to:'
+        of the information system, system component, or information system service to:
       parts:
       - label: a.
         prose: Create and implement a security assessment plan that includes assessment
@@ -22459,10 +22724,10 @@ SA-11(02):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or information
-      system service to perform threat and vulnerability analyses and subsequent testing/evaluation
-      of the as-built system, component, or service.'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to perform threat and vulnerability analyses and subsequent testing/evaluation of the as-built system, component, or service.
   implementation:
   guidance:
   - prose: >+
@@ -22561,10 +22826,10 @@ SA-11(08):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Requires information systems, system components, and information system
-      services to employ dynamic code analysis tools to identify common flaws and
-      document the results of the analysis.'
+  - prose: |
+      The organization:
+      
+      Requires information systems, system components, and information system services to employ dynamic code analysis tools to identify common flaws and document the results of the analysis.
   implementation:
   guidance:
   - prose: >+
@@ -22604,13 +22869,10 @@ SA-12:
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Protects against supply chain threats to the information system, system
-      component, or information system service by employing best practices and methodologies;
-      and wherever possible, selecting components that have been previously reviewed
-      by other government entities (e.g., National Information assurance Partnership
-      [NIAP]) as part of a comprehensive, defense-in-breadth information security
-      strategy.'
+  - prose: |
+      The organization:
+      
+      Protects against supply chain threats to the information system, system component, or information system service by employing best practices and methodologies; and wherever possible, selecting components that have been previously reviewed by other government entities (e.g., National Information assurance Partnership [NIAP]) as part of a comprehensive, defense-in-breadth information security strategy.
   implementation:
   guidance:
   - prose: |+
@@ -22851,11 +23113,10 @@ SA-16:
   assurance: assurance
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Requires the developer of the information system, system component, or information
-      system service to provide appropriate training (or training materials), for
-      affected personnel, on the correct use and operation of the implemented security
-      functions, controls, and/or mechanisms.'
+  - prose: |
+      The organization:
+      
+      Requires the developer of the information system, system component, or information system service to provide appropriate training (or training materials), for affected personnel, on the correct use and operation of the implemented security functions, controls, and/or mechanisms.
   implementation:
   guidance:
   - prose: >+
@@ -22891,10 +23152,10 @@ SA-17:
   priority: P1
   control:
   - parts:
-    - prose: 'The organization:\n\n
-        Requires the developer of the information system, system component, or
-        information system service to produce a design specification and security architecture
-        that:'
+    - prose: |
+        The organization:
+      
+        Requires the developer of the information system, system component, or information system service to produce a design specification and security architecture that:
       parts:
       - label: a.
         prose: Is consistent with and supportive of the organization's security architecture
@@ -22960,19 +23221,22 @@ SA-21:
   priority: P3
   control:
   - parts:
-    - prose: 'The organization:\n\n
-        Requires that the developer of information systems, system components,
-        or information system services:'
+    - prose: |
+        The organization:
+      
+        Requires that the developer of information systems, system components, or information system services:
       parts:
       - label: a.
         prose: Have appropriate access authorizations as determined by assigned duties;
           and
       - label: b.
         prose: Satisfy personnel screening criteria as defined by CMS.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-          The organization:\n\n
-          Requires that the developer of systems containing personally identifiable
-          information (PII)'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        The organization:
+
+        Requires that the developer of systems containing personally identifiable information (PII)
       parts:
       - label: a.
         prose: Have appropriate access authorizations as determined by the assigned contracting
@@ -23331,9 +23595,10 @@ SC-03(03):
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Minimizes the number of non-security functions included within the isolation
-      boundary containing security functions.'
+  - prose: |
+      The organization:
+      
+      Minimizes the number of non-security functions included within the isolation boundary containing security functions.
   implementation:
   guidance:
   - prose: >+
@@ -23368,9 +23633,10 @@ SC-03(04):
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Implements security functions as largely independent modules that maximize
-      internal cohesiveness within modules and minimize coupling between modules.'
+  - prose: |
+      The organization:
+      
+      Implements security functions as largely independent modules that maximize internal cohesiveness within modules and minimize coupling between modules.
   implementation:
   guidance: >+
     The reduction in inter-module interactions helps to constrain security functions and to manage complexity. 
@@ -23400,10 +23666,10 @@ SC-03(05):
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Implements security functions as a layered structure minimizing interactions
-      between layers of the design and avoiding any dependence by lower layers on
-      the functionality or correctness of higher layers.'
+  - prose: |
+      The organization:
+      
+      Implements security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers on the functionality or correctness of higher layers.
   implementation:
   guidance:
   - prose: >+
@@ -23521,8 +23787,10 @@ SC-05:
       - NIST National Vulnerability Database:  <http://nvd.nist.gov/home.cfm>.
   implementation:
   - parts:
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization defines a list of types of denial of service
@@ -23681,8 +23949,10 @@ SC-07(03):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Limits the number of external network connections to the information system.'
+  - prose: |
+      The organization:
+      
+      Limits the number of external network connections to the information system.
   implementation:
   - parts:
     - prose: 'High & Moderate:'
@@ -23690,8 +23960,10 @@ SC-07(03):
       - label: Std.1
         prose: Implementation must route external connections via a Trusted Internet
           Connection (TIC) portal.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: Implementation must be compliant with FedRAMP interconnection requirements.
@@ -23849,8 +24121,10 @@ SC-07(08):
       traffic to untrusted external networks through authenticated proxy servers at
       managed interfaces.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, this Standard replaces the requirement defined in SC-07(08).
@@ -24003,10 +24277,10 @@ SC-07(21):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs boundary protection mechanisms to separate defined information system
-      components (defined in the applicable system security plan) supporting CMS missions
-      and/or business functions.'
+  - prose: |
+      The organization:
+      
+      Employs boundary protection mechanisms to separate defined information system components (defined in the applicable system security plan) supporting CMS missions and/or business functions.
   implementation:
   guidance:
   - prose: >+
@@ -24237,8 +24511,10 @@ SC-10:
           (i.e., a system to system interconnection) upon issuance of an order by
           the CMS CIO, CISO, or Senior Official for Privacy (SOP).
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, this Standard replaces the requirement defined within SC-10.
@@ -24361,9 +24637,10 @@ SC-12(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Maintains availability of information in the event of the loss of cryptographic
-      keys by users.'
+  - prose: |
+      The organization:
+      
+      Maintains availability of information in the event of the loss of cryptographic keys by users.
   implementation:
   - prose: 'High:'
     parts:
@@ -24467,12 +24744,10 @@ SC-15:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Prohibits running collaborative computing mechanisms, unless explicitly
-      authorized, in writing, by the CMS CIO or his/her designated representative.
-      If collaborative computer is authorized, the authorization must specifically
-      identify allowed mechanisms, allowed purpose, and the information system upon
-      which the mechanisms can be used. The information system:'
+  - prose: |
+      The organization:
+      
+      Prohibits running collaborative computing mechanisms, unless explicitly authorized, in writing, by the CMS CIO or his/her designated representative. If collaborative computer is authorized, the authorization must specifically identify allowed mechanisms, allowed purpose, and the information system upon which the mechanisms can be used. The information system:
     parts:
     - label: a.
       prose: Prohibits remote activation of collaborative computing devices; and
@@ -24480,8 +24755,10 @@ SC-15:
       prose: Provides an explicit indication of use to users physically present at
         the devices.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High, Moderate & Low:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High, Moderate & Low:
     parts:
     - label: CSP.1
       prose: For CSPs, the information system prohibits remote activation of collaborative
@@ -24561,12 +24838,15 @@ SC-17:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Issues public key certificates under an appropriate certificate policy or
-      obtains public key certificates from an approved service provider.'
+  - prose: |
+      The organization:
+      
+      Issues public key certificates under an appropriate certificate policy or obtains public key certificates from an approved service provider.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization defines the public key infrastructure certificate
@@ -24658,10 +24938,10 @@ SC-19:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Prohibits the use of VoIP technologies, unless explicitly authorized, in
-      writing, by the CIO or his/her designated representative. If VoIP is authorized,
-      the organization:'
+  - prose: |
+      The organization:
+      
+      Prohibits the use of VoIP technologies, unless explicitly authorized, in writing, by the CIO or his/her designated representative. If VoIP is authorized, the organization:
     parts:
     - label: a.
       prose: Establishes usage restrictions and implementation guidance for VoIP technologies
@@ -24942,8 +25222,10 @@ SC-28:
       
       - Instance (container) image files from virtual server and client deployments must be encrypted in a manner that meets FIPS 140-2 validated requirements.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs support the capability to use cryptographic mechanisms to protect
@@ -25014,12 +25296,17 @@ SC-28(01):
   assurance:
   priority: P3
   control:
-  - prose: 'The information system implements cryptographic mechanisms to prevent unauthorized
+  - prose: >+
+      The information system implements cryptographic mechanisms to prevent unauthorized
       disclosure and modification of CMS Sensitive Information as defined in the Risk
       Management Handbook (RMH), Volume 1, Chapter 10, CMS Risk Management Terms,
-      Definitions, and Acronyms.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      Organizations must'
+      Definitions, and Acronyms.
+
+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
+      Organizations must
     parts:
     - label: 1.
       prose: Encrypt data at rest in mobile devices for confidentiality to protect
@@ -25035,8 +25322,10 @@ SC-28(01):
     - label: 5.
       prose: Encrypt data stored in the cloud—whether the cloud is government or private.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: CSPs support the capability to use cryptographic mechanisms to protect
@@ -25101,11 +25390,10 @@ SC-32:
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Partitions the information system into defined information system components
-      (defined in the applicable system security plan) residing in separate physical
-      domains or environments based on defined circumstances (defined in the applicable
-      system security plan) for physical separation of components.'
+  - prose: |
+      The organization:
+      
+      Partitions the information system into defined information system components (defined in the applicable system security plan) residing in separate physical domains or environments based on defined circumstances (defined in the applicable system security plan) for physical separation of components.
   implementation:
   guidance:
   - prose: >+
@@ -25449,8 +25737,10 @@ SI-02(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Centrally manages the flaw remediation process.'
+  - prose: |
+      The organization:
+      
+      Centrally manages the flaw remediation process.
   implementation:
   - parts:
     - prose: 'High:'
@@ -25532,10 +25822,10 @@ SI-02(02):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms no less often than once every seventy-two (72)
-      hours to determine the state of information system components regarding flaw
-      remediation.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms no less often than once every seventy-two (72) hours to determine the state of information system components regarding flaw remediation.
   implementation:
   guidance:
   references:
@@ -25659,8 +25949,10 @@ SI-03:
       - label: Std.3
         prose: Malicious code scanning results are reported to the CCIC SIEM in compliance
           with AU-06.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: |
@@ -25738,8 +26030,10 @@ SI-03(01):
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Centrally manages malicious code protection mechanisms.'
+  - prose: |
+      The organization:
+      
+      Centrally manages malicious code protection mechanisms.
   implementation:
   guidance:
   - prose: >+
@@ -25873,8 +26167,10 @@ SI-04:
           prose: The organization monitors for unauthorized remote connections to the
             information system continuously, in real-time and takes appropriate action
             if an unauthorized connection is discovered.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization monitors events on the information system to
@@ -25954,9 +26250,10 @@ SI-04(01):
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Connects and configures individual intrusion detection tools into an information
-      system-wide intrusion detection system.'
+  - prose: |
+      The organization:
+      
+      Connects and configures individual intrusion detection tools into an information system-wide intrusion detection system.
   implementation:
   - parts:
     - prose: 'High:'
@@ -26036,8 +26333,10 @@ SI-04(02):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated tools to support near real-time analysis of events.'
+  - prose: |
+      The organization:
+      
+      Employs automated tools to support near real-time analysis of events.
   implementation:
   - prose: 'High & Moderate:'
     parts:
@@ -26097,10 +26396,10 @@ SI-04(03):
   assurance: assurance
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Employs automated tools to integrate intrusion detection tools into access
-      control and flow control mechanisms for rapid response to attacks by enabling
-      reconfiguration of these mechanisms in support of attack isolation and elimination.'
+  - prose: |
+      The organization:
+      
+      Employs automated tools to integrate intrusion detection tools into access control and flow control mechanisms for rapid response to attacks by enabling reconfiguration of these mechanisms in support of attack isolation and elimination.
   implementation:
   guidance:
   - prose: >+
@@ -26253,8 +26552,10 @@ SI-04(05):
       - label: Std.2
         prose: When selected, as required by CMS, raw event information must be available
           in an unaltered format to the CCIC.
-    - prose: 'Systems defined as CSPs:\n\n
-        High & Moderate:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High & Moderate:
       parts:
       - label: CSP.1
         prose: 'For CSPs, this Standard replaces the requirement defined within SI-04(05).
@@ -26325,10 +26626,10 @@ SI-04(14):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Employs a wireless intrusion detection system to identify rogue wireless
-      devices and to detect attack attempts and potential compromises/breaches to
-      the information system.'
+  - prose: |
+      The organization:
+      
+      Employs a wireless intrusion detection system to identify rogue wireless devices and to detect attack attempts and potential compromises/breaches to the information system.
   implementation:
   guidance:
   - prose: >+
@@ -26369,8 +26670,10 @@ SI-04(16):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Correlates information from monitoring tools employed throughout the information system.'
+  - prose: |
+      The organization:
+      
+      Correlates information from monitoring tools employed throughout the information system.
   implementation:
   guidance:
   - prose: Correlating information from different monitoring tools can provide a more comprehensive 
@@ -26410,12 +26713,12 @@ SI-04(23):
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Implements CMS-required host-based monitoring mechanisms on all systems,
-      appliances, devices, services, and applications;  - Devices and appliances that
-      do not support a host-based intrusion detection system/intrusion prevention
-      system (IDS/IPS) sensor capability must be documented in the applicable Information
-      System Risk Assessment and System Security Plan.'
+  - prose: |
+      The organization:
+      
+      Implements CMS-required host-based monitoring mechanisms on all systems, appliances, devices, services, and applications;  
+      
+      - Devices and appliances that do not support a host-based intrusion detection system/intrusion prevention system (IDS/IPS) sensor capability must be documented in the applicable Information System Risk Assessment and System Security Plan.
   implementation:
   guidance:
   - prose: >+
@@ -26565,8 +26868,10 @@ SI-05:
         prose: The organization's security operations center is responsible for responding
           to advisories, requests, or directives issued by the CMS Security Operations
           Center (SOC) and/or CCIC.
-    - prose: 'Systems defined as CSPs:\n\n
-        High, Moderate & Low:'
+    - prose: |
+        Systems defined as CSPs:
+
+        High, Moderate & Low:
       parts:
       - label: CSP.1
         prose: For CSPs, the organization disseminates security alerts, advisories, and
@@ -26627,9 +26932,10 @@ SI-05(01):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated mechanisms to make security alert and advisory information
-      available throughout the organization.'
+  - prose: |
+      The organization:
+      
+      Employs automated mechanisms to make security alert and advisory information available throughout the organization.
   implementation:
   guidance:
   - prose: >+
@@ -26680,8 +26986,10 @@ SI-06:
         or performs some other defined alternative action(s) (defined in the applicable
         System Security Plan) when anomalies are discovered.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the information system verifies the correct operation of security
@@ -26748,9 +27056,10 @@ SI-07:
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs integrity verification tools to detect unauthorized changes to software,
-      firmware, and information.'
+  - prose: |
+      The organization:
+      
+      Employs integrity verification tools to detect unauthorized changes to software, firmware, and information.
   implementation:
   guidance:
   - prose: >+
@@ -26804,8 +27113,10 @@ SI-07(01):
   - prose: The information system performs an integrity check of software, firmware,
       and information daily and at system startup.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, the organization reassesses the integrity of software and information
@@ -26837,10 +27148,10 @@ SI-07(02):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Employs automated tools that provide notification to defined personnel or
-      roles (defined in the applicable System Security Plan) upon discovering discrepancies
-      during integrity verification.'
+  - prose: |
+      The organization:
+      
+      Employs automated tools that provide notification to defined personnel or roles (defined in the applicable System Security Plan) upon discovering discrepancies during integrity verification.
   implementation:
   guidance:
   - prose: >+
@@ -26985,10 +27296,10 @@ SI-07(07):
   assurance: assurance
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Incorporates the detection of defined unauthorized security-relevant changes
-      (defined in the applicable System Security Plan) to the information system into
-      the organizational incident response capability.'
+  - prose: |
+      The organization:
+      
+      Incorporates the detection of defined unauthorized security-relevant changes (defined in the applicable System Security Plan) to the information system into the organizational incident response capability.
   implementation:
   guidance:
   - prose: >+
@@ -27118,8 +27429,10 @@ SI-08(01):
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Centrally manages spam protection mechanisms.'
+  - prose: |
+      The organization:
+      
+      Centrally manages spam protection mechanisms.
   implementation:
   guidance:
   - prose: >+
@@ -27245,12 +27558,17 @@ SI-11:
       - label: b.
         prose: Reveals error messages only to defined personnel or roles (defined in
           the applicable System Security Plan).
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         The information system reveals error messages only to authorized individuals
-        with a need for the information in the performance of their duties.'
+        with a need for the information in the performance of their duties.
   implementation:
-  - prose: 'Systems defined as CSPs:\n\n
-      High & Moderate:'
+  - prose: |
+      Systems defined as CSPs:
+
+      High & Moderate:
     parts:
     - label: CSP.1
       prose: For CSPs, this Standard replaces the requirement defined within SI-11.
@@ -27316,14 +27634,14 @@ SI-12:
   assurance:
   priority: P2
   control:
-  - prose: 'The organization:\n\n
-      Handles and retains information within the information system and information
-      output from the system in accordance with applicable federal laws, Executive
-      Orders, directives, policies, regulations, standards, and operational requirements.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      For personally identifiable information (PII) maintained in a Privacy Act
-      system of records, the corresponding record management requirements, including
-      retention periods, must be addressed in the system of records notice (SORN).'
+  - prose: |
+      The organization:
+      
+      Handles and retains information within the information system and information output from the system in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and operational requirements.
+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      For personally identifiable information (PII) maintained in a Privacy Act system of records, the corresponding record management requirements, including retention periods, must be addressed in the system of records notice (SORN).
   implementation:
   - parts:
     - prose: 'High, Moderate & Low:'
@@ -27528,10 +27846,10 @@ PM-02:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Appoints a Chief Information Security Officer with the mission and resources
-      to coordinate, develop, implement, and maintain an organization-wide information
-      security program.'
+  - prose: |
+      The organization:
+      
+      Appoints a Chief Information Security Officer with the mission and resources to coordinate, develop, implement, and maintain an organization-wide information security program.
   implementation:
   - prose: 'Systems processing, storing, or transmitting PHI:'
     parts:
@@ -27697,10 +28015,10 @@ PM-05:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Develops and maintains an inventory of its information systems, to include
-      those operated on behalf of CMS (e.g., by a contractor, vendor, cloud service
-      provider, or other service provider).'
+  - prose: |
+      The organization:
+      
+      Develops and maintains an inventory of its information systems, to include those operated on behalf of CMS (e.g., by a contractor, vendor, cloud service provider, or other service provider).
   implementation:
   guidance:
   - prose: >+
@@ -27744,11 +28062,10 @@ PM-06:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Develops, monitors, and reports on the results of information security measures
-      of performance to evaluate the effectiveness of IT security and privacy policies,
-      procedures, and controls. The measures and metrics must provide information
-      on measures of implementation, efficiency, effectiveness, and impact.'
+  - prose: |
+      The organization:
+      
+      Develops, monitors, and reports on the results of information security measures of performance to evaluate the effectiveness of IT security and privacy policies, procedures, and controls. The measures and metrics must provide information on measures of implementation, efficiency, effectiveness, and impact.
   implementation:
   guidance:
   - prose: >+
@@ -27781,10 +28098,10 @@ PM-07:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Develops and implements an enterprise architecture with consideration for
-      information security and the resulting risk to organizational operations, organizational
-      assets, individuals, other organizations, and the Nation.'
+  - prose: |
+      The organization:
+      
+      Develops and implements an enterprise architecture with consideration for information security and the resulting risk to organizational operations, organizational assets, individuals, other organizations, and the Nation.
   implementation:
   guidance:
   - prose: >+
@@ -27840,9 +28157,10 @@ PM-08:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Addresses information security issues in the development, documentation,
-      and updating of a critical infrastructure and key resources protection plan.'
+  - prose: |
+      The organization:
+      
+      Addresses information security issues in the development, documentation, and updating of a critical infrastructure and key resources protection plan.
   implementation:
   guidance:
   - prose: >+
@@ -27891,13 +28209,16 @@ PM-09:
         prose: Reviews and updates the risk management strategy at least every three
           hundred and sixty-five (365) days or as required, to address organizational
           changes.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+
         The risk management strategy must include a process to evaluate and address
         privacy risks for individuals and information (data) such as risk to individual,
         risk to the system, risk to the organization, and risk to the enterprise. In
         addition to business risks that arise out of privacy violations, such as reputation
         or liability risks, organizational policies should also focus on minimizing
-        the risk of harm to individuals.'
+        the risk of harm to individuals.
   implementation:
   - prose: 'Systems processing, storing, or transmitting PHI:'
     parts:
@@ -28096,15 +28417,22 @@ PM-12:
   assurance:
   priority: P1
   control:
-  - prose: "The organization:\n\n
+  - prose: >+
+      The organization:
+
+
       Implements an insider threat program that includes a cross-discipline insider
-      threat incident handling team.\n\n
-      Systems processing, storing, or transmitting PII (to include PHI):\n\n
+      threat incident handling team.
+
+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       When defining the requirements for and designing an organization's insider
       threat program, the insider threat team must engage the participation, and obtain
       concurrence, of the organization's Privacy Officer prior to implementation.
       For existing insider threat programs, conduct a review of the program with the
-      organization's Privacy Officer to ensure program meets applicable privacy requirements."
+      organization's Privacy Officer to ensure program meets applicable privacy requirements.
   implementation:
   - prose: 'High, Moderate & Low:'
     parts:
@@ -28176,8 +28504,10 @@ PM-13:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Establishes an information security workforce development and improvement program.'
+  - prose: |
+      The organization:
+      
+      Establishes an information security workforce development and improvement program.
   implementation:
   guidance:
   - prose: |+
@@ -28248,9 +28578,10 @@ PM-14:
         prose: Reviews testing, training, and monitoring plans for consistency with the
           organizational risk management strategy and organization-wide priorities for
           risk response actions.
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        Reviews testing, training and monitoring plans for consistency with the
-        organizational privacy risk management strategy.'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        Reviews testing, training and monitoring plans for consistency with the organizational privacy risk management strategy.
   implementation:
   guidance:
   - prose: >+
@@ -28304,9 +28635,10 @@ PM-15:
   assurance:
   priority: P3
   control:
-  - prose: 'The organization:\n\n
-      Establishes and institutionalizes contact with selected groups and associations
-      within the security community:'
+  - prose: |
+      The organization:
+      
+      Establishes and institutionalizes contact with selected groups and associations within the security community:
     parts:
     - label: a.
       prose: To facilitate ongoing security education and training for organizational
@@ -28355,9 +28687,10 @@ PM-16:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Implements a threat awareness program that includes a cross-organization
-      information-sharing capability'
+  - prose: |
+      The organization:
+      
+      Implements a threat awareness program that includes a cross-organization information-sharing capability
   implementation:
   guidance:
   - prose: >+
@@ -28400,11 +28733,16 @@ AP-01:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
+      The organization:
+
+
       Determines and documents the legal authority that permits the collection,
       use, maintenance, and sharing of PII, either generally or in support of specific
-      programs and the needs of information systems.'
+      programs and the needs of information systems.
   implementation:
   guidance:
   - prose: >+
@@ -28461,11 +28799,14 @@ AP-02:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization, at the system or application level, describes the purpose(s)
       for which PII is collected, used, maintained, and shared in privacy compliance
       documentation, privacy notices, and privacy policies (e.g., PIAs, SORNs, Privacy
-      Act Statements, and Computer Matching Agreements [CMAs]).'
+      Act Statements, and Computer Matching Agreements [CMAs]).
   implementation:
   guidance:
   - prose: >+
@@ -28895,8 +29236,10 @@ AR-03:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Establishes privacy roles, responsibilities, and access requirements for
@@ -28911,8 +29254,10 @@ AR-03:
         or service provider and its personnel.
   implementation:
   - parts:
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        High:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        High:
       parts:
       - label: PRIV.1
         prose: The contract or other acquisition-related documents must flow-down privacy
@@ -29211,15 +29556,15 @@ AR-06:
   assurance:
   priority: P1
   control:
-  - prose: 'The organization:\n\n
-      Develops, disseminates, and updates reports to OMB, Congress, and other
-      oversight bodies, as appropriate, to demonstrate accountability with specific
-      statutory and regulatory privacy program mandates and to senior management and
-      other personnel with responsibility for monitoring privacy program progress
-      and compliance.'
+  - prose: |
+      The organization:
+      
+      Develops, disseminates, and updates reports to OMB, Congress, and other oversight bodies, as appropriate, to demonstrate accountability with specific statutory and regulatory privacy program mandates and to senior management and other personnel with responsibility for monitoring privacy program progress and compliance.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: The CCIC provides oversight of information security and privacy, to include
@@ -29292,15 +29637,20 @@ AR-07:
   assurance:
   priority: P1
   control:
-  - prose: "Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
+      The organization:
+
+
       Designs information systems to support privacy by automating privacy controls
       to the extent feasible, integrating and meeting privacy requirements throughout
       the CMS Life Cycle, and incorporating privacy concerns into reviews of significant
       changes to HHS/CMS systems, networks, physical environments, and other agency
       infrastructures.  The organization also conducts periodic reviews of systems
       to determine the need for updates to maintain compliance with the Privacy Act,
-      the organization's privacy policy, and any other legal or regulatory requirements."
+      the organization's privacy policy, and any other legal or regulatory requirements.
   implementation:
   guidance:
   - prose: >+
@@ -29400,8 +29750,10 @@ AR-08:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: 'Keeps an accurate accounting of disclosures of information held in each
@@ -29583,8 +29935,10 @@ DI-01:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Confirms to the greatest extent practicable upon collection or creation
@@ -29719,10 +30073,12 @@ DI-01(01):
   assurance:
   priority: P1
   control:
-  - prose: "Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:\n\n
-      Requests that the individual or individual's authorized representative validate
-      PII during the collection process."
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
+
+      Requests that the individual or individual's authorized representative validate PII during the collection process.
   implementation:
   guidance:
   - prose: >+
@@ -29762,14 +30118,21 @@ DI-01(02):
   assurance:
   priority: P1
   control:
-  - prose: "Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
+      The organization:
+
+
       Requests that the individual or individual's authorized representative revalidate
       that PII collected is still accurate no less often than once every 365 days
-      or as directed by the Data Integrity Board."
+      or as directed by the Data Integrity Board.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: Revalidation must occur as frequently as is necessary to ensure the PII
@@ -29818,8 +30181,10 @@ DI-02:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Documents processes to ensure the integrity of personally identifiable
@@ -29878,8 +30243,10 @@ DI-02(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization publishes CMAs on its public website.'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization publishes CMAs on its public website.
   implementation:
   guidance:
   references:
@@ -29974,8 +30341,10 @@ DM-01:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Identifies the minimum PII elements that are relevant and necessary to
@@ -30073,11 +30442,14 @@ DM-01(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization, where feasible and within the limits of technology and
       the law, locates and removes/redacts specified PII and/or uses anonymization
       and de-identification techniques to permit authorized use of the retained information
-      while reducing its sensitivity and reducing the risk resulting from disclosure.'
+      while reducing its sensitivity and reducing the risk resulting from disclosure.
   implementation:
   guidance:
   - prose: >+
@@ -30114,8 +30486,10 @@ DM-02:
   priority: P1
   control:
   - parts:
-    - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-        The organization:'
+    - prose: |
+        Systems processing, storing, or transmitting PII (to include PHI):
+
+        The organization:
       parts:
       - label: a.
         prose: Retains each collection of PII for the time period specified by the NARA-approved
@@ -30129,12 +30503,17 @@ DM-02:
       - label: c.
         prose: Uses FIPS-validated techniques or methods to ensure secure deletion or
           destruction of PII (including originals, copies, and archived records).
-    - prose: 'Systems processing, storing, or transmitting PHI:\n\n
-        The organization:\n\n
+    - prose: >+
+        Systems processing, storing, or transmitting PHI:
+
+
+        The organization:
+
+
         Retains each collection of protected health information (PHI) for a minimum
         of 6 years from the date of its creation or the date when it was last in effect,
         whichever is later to fulfill the purpose(s) identified in the notice or as
-        required by law.'
+        required by law.
   implementation:
   guidance:
   - prose: >+
@@ -30274,10 +30653,13 @@ DM-02(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization, where feasible, configures its information systems to
       record the date PII is collected, created, or updated and when PII is to be
-      deleted or archived under a NARA-approved Records Schedule.'
+      deleted or archived under a NARA-approved Records Schedule.
   implementation:
   guidance:
   - prose: >+
@@ -30314,8 +30696,10 @@ DM-03:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Develops policies and procedures that minimize the use of PII for testing,
@@ -30383,9 +30767,12 @@ DM-03(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization, where feasible, uses techniques to minimize the risk to
-      privacy of using PII for research, testing, or training.'
+      privacy of using PII for research, testing, or training.
   implementation:
   guidance:
   - prose: >+
@@ -30502,8 +30889,10 @@ IP-01:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Provides means, where feasible and appropriate, for individuals to authorize
@@ -30635,9 +31024,12 @@ IP-01(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization implements mechanisms to support itemized or tiered consent
-      for specific uses of data.'
+      for specific uses of data.
   implementation:
   guidance:
   - prose: >+
@@ -30680,8 +31072,10 @@ IP-02:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Provides individuals the ability to have access to their PII maintained
@@ -30798,8 +31192,10 @@ IP-03:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Provides a process for individuals to have inaccurate, incomplete, or
@@ -30916,9 +31312,12 @@ IP-04:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization implements a process for receiving and responding to complaints,
-      concerns, or questions from individuals about the organizational privacy practices.'
+      concerns, or questions from individuals about the organizational privacy practices.
   implementation:
   guidance:
   - prose: >+
@@ -30969,8 +31368,10 @@ IP-04(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Acknowledges complaints, concerns, or questions from individuals within
@@ -31159,8 +31560,10 @@ SE-02:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Develops and implements a Privacy Incident and Breach Response Plan; and
@@ -31292,8 +31695,10 @@ TR-01:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: |
@@ -31432,8 +31837,10 @@ TR-01(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization provides real-time and/or layered notice when it collects PII.'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization provides real-time and/or layered notice when it collects PII.
   implementation:
   guidance:
   - prose: >+
@@ -31476,9 +31883,10 @@ TR-02:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization, through the HHS Privacy Act Officer, OpDiv Privacy Contacts,
-      and the HHS Office of General Counsel:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization, through the HHS Privacy Act Officer, OpDiv Privacy Contacts, and the HHS Office of General Counsel:
     parts:
     - label: a.
       prose: Publishes SORNs in the Federal Register, subject to required oversight
@@ -31528,11 +31936,15 @@ TR-02(01):
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization publishes SORNs on its public website.'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization publishes SORNs on its public website.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: SORNs must be published on the CMS systems of records website at <http://www.cms.gov/Research-Statistics-Data-and-Systems/Computer-Data-and-Systems/Privacy/CMS-Systems-of-Records.html>
@@ -31569,8 +31981,10 @@ TR-03:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Ensures that the public has access to information about its privacy activities
@@ -31683,12 +32097,17 @@ UL-01:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
+  - prose: >+
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+
       The organization uses PII internally only for the authorized purpose(s)
-      identified in the Privacy Act and/or in public notices.'
+      identified in the Privacy Act and/or in public notices.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: All PII must be used for an official government purpose only. The officers
@@ -31712,95 +32131,7 @@ UL-01:
       authorities. Where appropriate, organizations obtain consent from individuals for the new use(s) of PII. The 
       phrase "authorization schema"refers to the logic of how authorization permissions are designed to function within 
       the system (e.g., by group, by role, by transaction type, etc.). An example of an authorization schema where 
-      permissions appropriately match functions would be a schema where a group of "reviewers"is separate from a group 
-      of "approvers." Individuals assigned to the "reviewer" group could read PII and make recommendations, but not 
-      approve actions. Individuals in the "approver"group could read recommendations and approve actions. An 
-      authorization schema where all individuals are automatically authorized to approve all actions is an example of a
-      schema where the alignment between permissions and functions may be inappropriate.
-  references:
-  - 'CFR: 45 C.F.R. §164.502'
-  - 45 C.F.R. §164.504
-  - 45 C.F.R. §164.506
-  - 45 C.F.R. §164.508
-  - 45 C.F.R. §164.510
-  - 45 C.F.R. §164.512
-  - '45 C.F.R. §164.514 Code: 5 U.S.C. §552a'
-  - Pub. L. No. 107-347, §208
-  - 'OMB Circular A-130: 7.g.'
-  - 'Privacy Act: §552a(b)(1)'
-  related:
-  - AC-2, AC-3, AC-5, AC-6, AC-8, AC-21, AU-2, AU-3, AU-10, AU-14, IA-2, PS-1, PS-2,
-    PS-3, AP-2, AR-2, AR-3, AR-4, AR-5, IP-1, TR-1, TR-2
-  assessment:
-  - label: 'Systems processing, storing, or transmitting PII (to include PHI):'
-
-  - label: 'Determine if:'
-    parts:
-    - label: (i)
-      prose: 'The organization uses PII internally only for the authorized purpose(s)
-        identified in the Privacy Act and/or in public noticesDetermine if:'
-      parts:
-      - label: (i)
-        prose: The system's use of PII is consistent with the privacy notices related
-          to the system, including any SORN, Privacy Impact Assessment, and/or notices
-          provided at points of collection;
-      - label: (ii)
-        prose: The system's disclosures of PII are consistent with the privacy notices
-          related to the system, including any SORN, Privacy Impact Assessment, and/or
-          notices provided at points of collection;
-      - label: (iii)
-        prose: The authorization schema for the system aligns with the business logic
-          within the system;
-      - label: (iv)
-        prose: The system responds to authorization changes within a defined timeframe;
-      - label: (v)
-        prose: The system connects to source systems to process changes in authorizations
-          based on relevant organizational events (e.g., separations, job changes,
-          etc.); and
-      - label: (vi)
-        prose: The system requests appropriate credentials at the time of request for
-          initial access to sufficiently identify the user/system making the request.
-  assessment_methods:
-  - label: 'Systems processing, storing, or transmitting PII (to include PHI):'
-  - label: 'Examine:'
-    prose: Organization privacy policy; organization privacy practices; other relevant
-      documents or records.
-  - label: 'Examine:'
-    prose: Documented system functions with relevant privacy notices.
-  - label: 'Examine:'
-    prose: Documented system outputs with relevant privacy notices.
-  - label: 'Examine:'
-    prose: 'The functions of the system and the authorization schema of the system,
-      and compare them for alignment. Comment: If the authorization schema is not
-      in alignment with business functions it could result in entities having greater
-      access to PII than needed.'
-  - label: 'Examine:'
-    prose: 'The authorization schema and compare it to the SORN and any applicable
-      Computer Matching Agreements and data sharing memoranda of understanding (MOU)/memoranda
-      of agreement (MOA). Comment: If the authorization schema allows for access or
-      roles that are not included as part of relevant privacy documents, the system
-      will be in violation of the Privacy Act of 1974.'
-  - label: 'Examine:'
-    prose: 'A sample of the existing or proposed users/systems and compare their business
-      responsibilities to their permissions within the system. Comment: If the authorization
-      schema is too broad, it will result in entities having greater access to PII
-      than needed; if the schema is too narrow, it will result in overly burdensome
-      administration of the system authorizations.'
-  - label: Test
-    prose: Remove a user/system's authorization to access the system.
-  - label: Test
-    prose: Remove a user/system's authorization permission.
-  - label: Test
-    prose: Reduce the authorization status of a user/system.
-  - label: 'Examine:'
-    prose: The system design to verify that the system connects to all the appropriate
-      source systems for changes in user/system status.
-  - label: Test
-    prose: Make a change to a user/system's status in the source system such that access
-      to the system being tested would be removed or reduced (e.g., a separation).
-  - label: Test
-    prose: |
-      Make a change to a user/system's status in the source system such that a specific permission authority would be removed (e.g., a department change). Comment: The number of test cases may vary based on:
+      permissions appropriately ma0(e.g., a department change). Comment: The number of test cases may vary based on:
 
       (1) The PII and processing capabilities of the system;
       (2) The technology platform of the system; and
@@ -31823,8 +32154,10 @@ UL-02:
   assurance:
   priority: P1
   control:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      The organization:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      The organization:
     parts:
     - label: a.
       prose: Shares PII externally, only for the authorized purposes identified in
@@ -31843,8 +32176,10 @@ UL-02:
         to assess whether the sharing is authorized and whether additional or new
         public notice is required.
   implementation:
-  - prose: 'Systems processing, storing, or transmitting PII (to include PHI):\n\n
-      High & Moderate:'
+  - prose: |
+      Systems processing, storing, or transmitting PII (to include PHI):
+
+      High & Moderate:
     parts:
     - label: PRIV.1
       prose: Consistent with the Purpose Specification and Use Limitation Fair Information

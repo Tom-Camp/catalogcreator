@@ -16,7 +16,7 @@ from uuid import uuid4
 from pydantic import BaseModel
 from pydantic import Field
 
-OSCAL_VERSION = "1.0.0"
+OSCAL_VERSION = "1.0.2"
 
 
 class ControlRegExps:
@@ -120,6 +120,35 @@ def control_to_statement_id(control_id):
     return f"{control_id}_smt"
 
 
+def control_to_sort_order(control_id):
+    """
+    Construct an OSCAL style sort-id from a control identifier.
+    """
+
+    control_id = control_id.strip()
+    control_id = control_id.lower()
+
+    # AC-1
+    match = re.match(ControlRegExps.nist_800_53_simple, control_id)
+    if match:
+        family = match.group(1)
+        number = int(match.group(2))
+        return f"{family}-{str(number).zfill(2)}"
+
+    # AC-2(1)
+    match = re.match(ControlRegExps.nist_800_53_extended, control_id)
+    if match:
+        family = match.group(1)
+        number = int(match.group(2))
+        extension = int(match.group(3))
+        return f"{family}-{str(number).zfill(2)}.{str(extension).zfill(2)}"
+
+    # nothing matched ...
+    return control_id
+
+
+
+
 class NCName(str):
     pass
 
@@ -166,10 +195,10 @@ class LinkRelEnum(str, Enum):
 
 
 class Link(OSCALElement):
-    text: str
     href: str
-    rel: Optional[LinkRelEnum]
+    rel: Optional[str]
     media_type: Optional[str]
+    text: Optional[str]
 
     class Config:
         fields = {"media_type": "media-type"}
